@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <!-- viewport meta to reset iPhone inital scale -->
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0,maximum-scale=1.0"/>
+    <title>Image Slide - Own Plugin</title>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <link href="styles/global.css" type="text/css" rel="stylesheet" />
+	<script>
+	 $(document).ready(function ()
+		{
+		 $.getJSON("https://api.twitter.com/1/statuses/user_timeline/ashin7880.json?callback=?", function(data) {
+		  $(".show_tweet").html(data[0].text);
+		 });
+	});
+	</script>
+</head>
+<body>
+    <!-- HTML Starts -->
+    <div class="wrapper">
+		<div class="show_tweet"></div>
+	</div>
+    <!-- HTML Ends -->
+</body>
+</html>
