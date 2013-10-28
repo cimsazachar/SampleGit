@@ -18,5 +18,6 @@
 	}
 }(jQuery));
 
+// added the line from editor
 
 // -- Added comment
