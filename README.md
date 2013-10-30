@@ -1,3 +1,0 @@
-SampleGit
-=========
-Sample gitHub testing
